@@ -1,0 +1,5 @@
+#!/bin/bash
+
+OPTS="AlignEquals,AlignConstVisibilityEquals,AlignDoubleArrow,AlignDoubleSlashComments,AlignTypehint,AutoSemicolon,ClassToSelf,ClassToStatic,GeneratePHPDoc,IndentTernaryConditions,JoinToImplode,OrderAndRemoveUseClauses,OrderMethodAndVisibility,PHPDocTypesToFunctionTypehint,PrettyPrintDocBlocks,ReplaceIsNull,ShortArray,SpaceAroundControlStructures,SortUseNameSpace"
+
+php /usr/local/lib/phpfmt/build/phpf.phar --no-backup --passes=$OPTS "$@"
