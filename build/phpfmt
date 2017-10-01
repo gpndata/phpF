@@ -1,5 +1,5 @@
 #!/bin/bash
 
-OPTS="AlignEquals,AlignConstVisibilityEquals,AlignDoubleArrow,AlignDoubleSlashComments,AlignTypehint,AutoSemicolon,ClassToSelf,ClassToStatic,GeneratePHPDoc,IndentTernaryConditions,JoinToImplode,OrderAndRemoveUseClauses,OrderMethodAndVisibility,PHPDocTypesToFunctionTypehint,PrettyPrintDocBlocks,ReplaceIsNull,ShortArray,SpaceAroundControlStructures,SortUseNameSpace"
+OPTS="AlignEquals,AlignConstVisibilityEquals,AlignDoubleArrow,AlignGroupDoubleArrow,AlignDoubleSlashComments,AlignTypehint,GeneratePHPDoc,IndentTernaryConditions,JoinToImplode,OrderAndRemoveUseClauses,OrderMethodAndVisibility,PHPDocTypesToFunctionTypehint,ShortArray,SpaceBetweenMethods,SortUseNameSpace,StripNewlineAfterClassOpen,StripNewlineAfterCurlyOpen,StripNewlineWithinClassBody,StripSpaceWithinControlStructures,WrongConstructorName,DoubleToSingleQuote,SplitElseIf"
 
-php /usr/local/lib/phpfmt/build/phpf.phar --no-backup --passes=$OPTS "$@"
+php phpf.phar --no-backup --passes=$OPTS "$@"
