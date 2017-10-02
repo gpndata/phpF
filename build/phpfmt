@@ -2,6 +2,6 @@
 
 DIR="$(dirname "$(readlink -f "$0")")"
 
-OPTS="AlignEquals,AlignConstVisibilityEquals,AlignDoubleArrow,AlignGroupDoubleArrow,AlignDoubleSlashComments,AlignTypehint,GeneratePHPDoc,IndentTernaryConditions,JoinToImplode,OrderAndRemoveUseClauses,OrderMethodAndVisibility,PHPDocTypesToFunctionTypehint,ShortArray,SpaceBetweenMethods,SortUseNameSpace,StripNewlineAfterClassOpen,StripNewlineAfterCurlyOpen,StripNewlineWithinClassBody,StripSpaceWithinControlStructures,WrongConstructorName,DoubleToSingleQuote,SplitElseIf"
+OPTS="AlignEquals,AlignConstVisibilityEquals,AlignDoubleArrow,AlignGroupDoubleArrow,AlignDoubleSlashComments,AlignTypehint,GeneratePHPDoc,IndentTernaryConditions,JoinToImplode,OrderAndRemoveUseClauses,OrderMethodAndVisibility,ShortArray,SpaceBetweenMethods,SortUseNameSpace,StripNewlineAfterClassOpen,StripNewlineAfterCurlyOpen,StripNewlineWithinClassBody,StripSpaceWithinControlStructures,WrongConstructorName,DoubleToSingleQuote,SplitElseIf"
 
 php $DIR/phpf.phar --no-backup --passes=$OPTS "$@"
